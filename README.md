@@ -1,6 +1,9 @@
 
 # ```theoriz3r```
 
+
+```theoriz3r``` is a tool to do exploratory automated theorem proving. See this blog post for more discussion of the motivation for ```theoriz3r``` and examples of how it works: [https://tsvibt.blogspot.com/2023/09/theoriz3r.html](https://tsvibt.blogspot.com/2023/09/theoriz3r.html)
+
 ## Starting
 
 Install the [Z3 theorem prover](https://pypi.org/project/z3-solver/) with a command like:
