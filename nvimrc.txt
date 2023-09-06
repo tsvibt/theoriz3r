@@ -1,0 +1,19 @@
+
+let g:z3_dirs= ['your/homedirectory/theoriz3r', 'your/homedirectory/theoriz3r/theories',]
+if index(g:z3_dirs , getcwd())>= 0
+	au CursorMoved * checktime	
+	nnoremap <SOME KEY COMBO> "=PutObjDef()<C-M>p
+	nnoremap <SOME KEY COMBO> :set cmdheight=2<CR>:exe '! python3 ' . @%<CR>:set cmdheight=1<CR>
+	nnoremap <SOME KEY COMBO> :call DefineWord()<CR>:write<CR>:set cmdheight=2<CR>:exe '! python3 ' . @%<CR>:set cmdheight=1<CR>:e<CR>
+endif
+function! DefineWord()
+	let word = expand("<cword>")
+	normal! 0
+   put ='#-- DEF ' . word
+endfunction
+
+function! PutObjDef()
+	return "obj('')\n#! "
+endfunction
+
+

@@ -1,0 +1,1 @@
+{"first_countable(R)":["first_countable(R)"],"path_connected(R)":["arc_connected(R)","ForAll(X, Implies(arc_connected(X), path_connected(X)))"],"connected(R)":["arc_connected(R)","ForAll(X, Implies(arc_connected(X), path_connected(X)))","ForAll(X, Implies(path_connected(X), connected(X)))"],"arc_connected(R)":["arc_connected(R)"],"first_countable":["first_countable(R)"]}
